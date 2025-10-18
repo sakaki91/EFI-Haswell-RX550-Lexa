@@ -32,5 +32,5 @@ You have a working Hackintosh Haswell with RX550 Lexa
 <br>
 
 <b>Working Setup:</b><br>
-![Working Setup:](screenshot.png)
+![Working Setup:](example.png)
 <p>
