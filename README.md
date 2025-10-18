@@ -1,4 +1,4 @@
-# EFI OC Haswell + RX550 Lexa 4GB (Metal2)
+# EFI OC Haswell + RX550 Lexa 4GB (Metal2, Full-support with DRM and Encoders!)
 
 <p>
 <b>Build:</b><br>
