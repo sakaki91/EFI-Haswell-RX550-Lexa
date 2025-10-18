@@ -1,6 +1,5 @@
-# EFI OC Haswell + RX550 Lexa 4GB (Metal2, Full-support with DRM and Encoders!)
+# EFI OpenCore Haswell + RX550 Lexa 4GB (Metal2, Full-support with DRM and Encoders!)
 
-<p>
 <b>Build:</b><br>
 Mobo: Kingster H81 1150 DDR3<br>
 CPU: Intel Core i5-4590 3.70GHz<br>
