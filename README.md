@@ -19,8 +19,8 @@ Open the terminal and type:<br>
 **`diskutil list`** - this will list all your disks<br><br>
 **`sudo diskutil mount /dev/yourdisk`** - this will mount your efi partition according to your disk (e.g. /dev/disk0s1)<br>
 <br>After that, just delete the old EFI and move the new one to the partition, and you're done!<br>
-You have a working Hackintosh Haswell with RX550 Lexa
-<br><br>
+You have a working Hackintosh Haswell with RX550 Lexa!
+<br>
 
 ### <b>Modifications:</b>
 
