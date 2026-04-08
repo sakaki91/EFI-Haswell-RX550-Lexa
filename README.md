@@ -1,13 +1,14 @@
 # EFI OpenCore Haswell + RX550 Lexa 4GB (Metal2, Full-support with DRM and Encoders!)
 
-<b>Build:</b><br>
-Mobo: Kingster H81 1150 DDR3<br>
-CPU: Intel Core i5-4590 3.70GHz<br>
-Ram: 16GB Dual-Channel Kingston DDR3 1600MHz<br>
-Storage: 256GB NVME<br>
-GPU: Mancer RX550 Lexa 4GB<br>
+The following versions are compatible with this EFI:  
+`Catalina, Monterey, Ventura, Sonoma, Sequoia and finally Tahoe.`
 
-This setup works from macOS Catalina to macOS Sequoia with decent performance between versions.  
+__Build:__  
+Mobo: Kingster H81 1150 DDR3  
+CPU: Intel Core i5-4590 3.70GHz  
+Ram: 16GB Dual-Channel Kingston DDR3 1600MHz  
+Storage: 120GB SSD SATA  
+GPU: AMD RX550 Lexa 4GB  
 
 - [Tutorial](#tutorial)
 - [Modifications](#modifications)
