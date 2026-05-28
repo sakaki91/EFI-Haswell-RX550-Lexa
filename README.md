@@ -18,11 +18,11 @@ GPU: AMD RX550 Lexa 4GB
 #### Tutorial:
 
 Open the terminal and type:  
-this will list all your disks:
+this will list all your disks:  
 **`diskutil list`**<br>  
 
 
-this will mount your efi partition according to your disk (e.g. /dev/disk0s1):
+this will mount your efi partition according to your disk (e.g. /dev/disk0s1):  
 **`sudo diskutil mount /dev/yourEFIpartition`**  
 <br>After that, just delete the old EFI and move the new one to the partition, and you're done!  
 You have a working Hackintosh Haswell with RX550 Lexa!
