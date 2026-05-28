@@ -1,0 +1,80 @@
+EFI OpenCore Haswell + RX550 Lexa 4GB
+Metal2, Full-support with DRM and Encoders.
+===========================================
+
+The following versions are compatible with this EFI:
+Catalina, Monterey, Ventura, Sonoma, Sequoia and finally Tahoe.
+---------------------------------------------------------------
+
+Build:
+------
+Mobo: Kingster H81 1150 DDR3
+CPU: Intel Core i5-4590 3.70GHz
+Ram: 16GB Dual-Channel DDR3 1600MHz
+Storage: 240GB NVME
+GPU: AMD RX550 Lexa 4GB
+
+
+Getting Started:
+----------------
+
+Open the terminal and type:
+    
+    % diskutil list
+
+this will list all your disks.
+
+    % sudo diskutil mount /dev/yourEFIpartition
+
+this will mount your efi partition according to your disk (e.g. /dev/disk0s1).
+
+After that, just delete the old EFI and move the new one to the partition, and you're done!
+You have a working Hackintosh Haswell with RX550 Lexa!
+
+
+Modifications:
+--------------
+
+* boot-args:
+-v alcid=1 watchdog=0 agdpmod=pikera dk.e1000=0 e1000=0 shikigva=80 unfairgva=1 -radcodec
+
+
+* SMBIOS:
+Has a Generic Serial (MacPro 2019) and you need to regenerate a new SMBIOS using genSMBIOS:
+https://github.com/corpnewt/GenSMBIOS
+
+* Kexts present:
+    Lilu.kext 
+    VirtualSMC.kext
+    AppleALC.kext
+    AtherosE2200Ethernet.kext
+    IntelMausi.kext
+    RealtekRTL8111.kext
+    RestrictEvents.kext
+    SMCProcessor.kext
+    SMCSuperIO.kext
+    USBInjectAll.kext
+    WhateverGreen.kext
+
+* PCI/GPU-Setup:
+
+    Key: AAPL,slot-name     |    Value: Internal@0,3,1/0,0/0,0/0,0      | Type: STRING
+    Key: device-id          |    Value: FF670000                        | Type: DATA
+    Key: device_type        |    Value: VGA compatible controller       | Type: STRING
+    Key: hda-gfx            |    Value: onboard                         | Type: STRING
+    Key: model              |    Value: Radeon RX550                    | Type: STRING
+    Key: no-gfx-spoof       |    Value: 01000000                        | Type: DATA
+
+* ACPI:
+This EFI uses MaLd0n and Dortania SSDT's profiles:
+    ! MaLd0n.aml
+    ! SSDT-PLUG-DRTNIA.aml
+
+
+Important Links:
+----------------
+
+Olarila: https://olarila.com>Olarila
+Dortania: dortania.github.io>Dortania
+genSMBIOS: https://github.com/corpnewt/GenSMBIOS
+r/hackintosh: https://reddit.com/r/hackintosh
